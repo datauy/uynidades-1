@@ -1,0 +1,128 @@
+.uy-result {
+  background: linear-gradient(266.65deg, #37abdd 13.08%, #5a87e5 93.73%);
+}
+
+.uy-card {
+  position: relative;
+  background-color: white;
+  border-radius: 13px;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.1);
+
+  &:before {
+    z-index: 0;
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-position: center top 25%;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-image: url("data:image/svg+xml,%3Csvg width='375' height='328' viewBox='0 0 375 328' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.02' d='M-9.99885 317.684H76.4327C76.1683 278.8 92.2917 261.871 119.252 261.871C135.64 261.871 145.155 267.161 168.15 285.677C206.741 316.626 232.644 328 265.948 328C335.727 328 383.04 278.271 381.983 180.929H295.815C295.815 219.284 280.485 239.652 253.525 239.652C237.137 239.652 222.335 231.981 199.604 213.465C164.714 184.897 139.604 172.465 104.186 172.465C35.1993 172.465 -10.2632 217.432 -9.99885 317.684ZM-9.99885 145.219H76.4327C76.1683 106.335 92.2917 89.4065 119.252 89.4065C135.64 89.4065 145.155 94.6968 168.15 113.213C206.741 144.161 232.644 155.535 265.948 155.535C335.727 155.535 383.04 105.806 381.983 8.46452H295.815C295.815 46.8194 280.485 67.1871 253.525 67.1871C237.137 67.1871 222.335 59.5162 199.604 41C164.714 12.4323 139.604 0 104.186 0C35.1993 0 -10.2632 44.9677 -9.99885 145.219Z' fill='%23324873'/%3E%3C/svg%3E%0A");
+  }
+}
+
+.uy-card__number {
+  font-size: rem(32px);
+  font-weight: 600;
+  color: #324873;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: transparent;
+
+  @media (min-width: 425px) {
+    font-size: rem(45px);
+  }
+
+  @media (min-width: 768px) {
+    font-size: rem(55px);
+  }
+}
+
+.uy-card__currency {
+  color: #505050;
+  font-size: rem(18px);
+  font-weight: 600;
+  @media (min-width: 425px) {
+    font-size: rem(22px);
+  }
+  @media (min-width: 768px) {
+    font-size: rem(28px);
+  }
+}
+
+.uy-card__equals {
+  color: #6c6c6c;
+  font-size: rem(18px);
+  font-weight: 600;
+  @media (min-width: 425px) {
+    font-size: rem(22px);
+  }
+}
+
+.uy-card__body {
+  padding: 30px;
+  font-family: "ClashDisplay-Variable";
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: 768px) {
+    padding: 60px;
+  }
+}
+
+.uy-card__footer {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  position: relative;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.uy-card__btn-share {
+  border-top: 1px solid #eaeaea;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #353535;
+  transition: 200ms ease;
+  overflow: hidden;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+
+  @media (min-width: 768px) {
+    flex: 1;
+
+    &:first-of-type,
+    &:nth-last-of-type(2) {
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  &:hover {
+    background-color: #f3f3f3;
+  }
+  &:active {
+    background-color: #eceeef;
+  }
+}
+
+.uy-card__btn-share + .uy-card__btn-share {
+  @media (min-width: 768px) {
+    border-left: 1px solid #eaeaea;
+    border-bottom-left-radius: 0;
+  }
+}

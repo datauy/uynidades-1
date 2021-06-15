@@ -1,0 +1,73 @@
+.uy-hero {
+  font-family: "ClashDisplay-Variable";
+  font-size: 2rem;
+  position: relative;
+  background: linear-gradient(180deg, #37abdd 0%, #1d4aa8 100%);
+  padding-top: 90px;
+  padding-bottom: 30px;
+  color: white;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .container {
+    z-index: 1;
+    position: relative;
+  }
+}
+
+.uy-hero__overlay {
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg class='uy-hero__bg' width='521' height='431' viewBox='0 0 521 431' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.4' d='M0.00152371 417.444H114.876C114.525 366.35 135.954 344.105 171.786 344.105C193.567 344.105 206.214 351.056 236.777 375.387C288.066 416.054 322.493 431 366.757 431C459.5 431 522.382 365.655 520.977 237.745H406.454C406.454 288.144 386.078 314.908 350.246 314.908C328.465 314.908 308.793 304.828 278.581 280.498C232.21 242.959 198.836 226.623 151.762 226.623C60.0735 226.623 -0.349778 285.711 0.00152371 417.444ZM0.00152371 190.822H114.876C114.525 139.727 135.954 117.482 171.786 117.482C193.567 117.482 206.214 124.434 236.777 148.765C288.066 189.431 322.493 204.377 366.757 204.377C459.5 204.377 522.382 139.032 520.977 11.1226H406.454C406.454 61.5218 386.078 88.2855 350.246 88.2855C328.465 88.2855 308.793 78.2057 278.581 53.875C232.21 16.3363 198.836 0 151.762 0C60.0735 0 -0.349778 59.0887 0.00152371 190.822Z' fill='url(%23paint0_linear)' /%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='485.181' y1='512.835' x2='42.5867' y2='544.174' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2337ABDD' /%3E%3Cstop offset='1' stop-color='%235A87E5' /%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+}
+
+.uy-hero__title {
+  font-weight: 600;
+  line-height: 1.45;
+  margin-bottom: 45px;
+
+  @media (min-width: 768px) {
+    font-size: rem(44px);
+    line-height: 1.65;
+  }
+}
+
+.uy-hero__btn {
+  background: transparent;
+  font-weight: 500;
+  border: none;
+  color: white;
+  font-size: rem(24px);
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0.8;
+  display: inline-block;
+
+  svg {
+    animation: float 3s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-5px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}

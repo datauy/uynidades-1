@@ -1,0 +1,17 @@
+@use "sass:math";
+
+/* Functions */
+
+@function rem($px) {
+  $size: strip-unit($px);
+
+  @return math.div($size, 16) + rem;
+}
+
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return math.div($number, ($number * 0 + 1));
+  }
+
+  @return $number;
+}

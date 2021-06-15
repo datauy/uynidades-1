@@ -1,0 +1,27 @@
+.uy-select,
+.uy-number {
+  border: none;
+  border-bottom: 2px solid #848a97;
+  max-width: 100%;
+  color: #2c83c7;
+  font-family: "ClashDisplay-Variable";
+  font-weight: 600;
+  font-size: rem(30px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: transparent;
+
+  &:focus {
+    border-bottom: 2px solid #2c83c7;
+    outline: 0;
+  }
+
+  &::placeholder {
+    color: #c0c0c0;
+  }
+
+  &::-moz-placeholder {
+    color: #c0c0c0;
+  }
+}

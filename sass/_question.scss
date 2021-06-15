@@ -1,0 +1,51 @@
+.uy-question {
+  font-family: "ClashDisplay-Variable";
+  text-align: center;
+  font-size: rem(36px);
+  font-weight: 600;
+  color: #324873;
+
+  @media (min-width: 768px) {
+    line-height: 2;
+
+    .uy-select,
+    .uy-number {
+      max-width: 260px;
+      height: 49px;
+      font-size: rem(36px);
+    }
+  }
+
+  @media (min-width: 992px) {
+    .uy-select,
+    .uy-number {
+      max-width: 320px;
+      width: auto;
+    }
+  }
+
+  span {
+    display: block;
+  }
+
+  span + span {
+    margin-top: 30px;
+  }
+
+  @media (min-width: 768px) {
+    span {
+      display: inline;
+    }
+    span + span {
+      margin-top: 0;
+    }
+  }
+}
+
+span.uy-question-equals {
+  @media (min-width: 768px) {
+    display: block;
+    margin-top: 15px !important;
+    margin-bottom: 15px;
+  }
+}
