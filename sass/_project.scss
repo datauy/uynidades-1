@@ -1,0 +1,39 @@
+.uy-project-row {
+  margin-top: 6rem;
+}
+
+.uy-project {
+  text-align: center;
+}
+
+.uy-project__img-link {
+  display: block;
+  margin-bottom: 10px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: 200ms ease;
+
+    &:hover {
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+  }
+}
+
+.uy-project__title {
+  font-family: "ClashDisplay-Variable";
+  font-weight: 600;
+  color: #004590;
+  font-size: rem(30px);
+  text-decoration: none;
+  margin-bottom: 6px;
+  display: inline-block;
+  transition: 200ms ease;
+
+  &:hover {
+    color: #2899c3;
+  }
+}
