@@ -38,7 +38,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -73,22 +74,18 @@
       <div class="uy-question">
         <span>¿A cuántos</span>
         <span>
-          <select name="select-unit" id="select-unit" class="uy-select">
-            <option value="">Antel Arena</option>
-            <option value="">Hércules</option>
-            <option value="">Coreanos de la Rambla</option>
-            <option value="">Milton Wynants</option>
+          <select name="select-unit" id="select-unit" class="uy-select target">
           </select>
         </span>
         <span class="uy-question-equals">equivalen</span>
         <span>
-          <input type="number" name="input-money" id="input-money" placeholder="2.000.450" size="9" class="uy-number"
+          <input type="number" name="input-money" id="input-money" placeholder="2.000.450" size="9" class="uy-number target"
             step="1">
         </span>
         <span>
-          <select name="select-currency" id="select-currency" class="uy-select">
-            <option value="">dólares</option>
-            <option value="">pesos</option>
+          <select name="select-currency" id="select-currency" class="uy-select target">
+            <option value="44">dólares</option>
+            <option value="1">pesos</option>
           </select> ?
         </span>
       </div>
@@ -98,14 +95,14 @@
   <div class="uy-result uy-default-section">
     <div class="container">
 
-      <div class="uy-card ***loading***">
+      <div class="uy-card">
 
         <img class="uy-card__loader" src="img/gif-math-lady.gif" alt="Cargando...">
         <!-- <img class="uy-card__loader" src="img/gif-math-guy.gif" alt="Cargando..."> -->
 
         <div class="uy-card__body">
-          <div class="uy-card__number">850.750.000</div>
-          <div class="uy-card__currency mb-5">dólares</div>
+          <div id="origin" class="uy-card__number">850.750.000</div>
+          <div id="origin-unit" class="uy-card__currency mb-5">dólares</div>
 
           <div class="uy-card__equals mb-5">equivalen a</div>
 
@@ -122,8 +119,8 @@
             </svg>
           </div>
 
-          <div class="uy-card__number">10,8050</div>
-          <div class="uy-card__currency">Antel Arena</div>
+          <div id="converted" class="uy-card__number">10,8050</div>
+          <div id="converted-unit" class="uy-card__currency">Antel Arena</div>
         </div>
 
         <div class="uy-card__footer">
@@ -159,7 +156,7 @@
       </div>
 
       <div class="text-center mt-5">
-        <button class="uy-btn-reload">
+        <button class="uy-btn-reload" onclick="random_unit(true)">
           <svg class="me-2" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.42847 1.83301V6.83301H6.29861" stroke="white" stroke-width="1.66667" stroke-linecap="round"
               stroke-linejoin="round" />

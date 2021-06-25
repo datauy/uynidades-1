@@ -1,0 +1,27 @@
+{
+  "antel-arena": {
+    "ico": "../img/usd.png",
+    "factor": 10,
+    "name": "Antel Arenas"
+  },
+  "tele-comunicaciones": {
+    "ico": "../img/usd.png",
+    "factor": 20,
+    "name": "Torres de las telecomunicaciones"
+  },
+  "hercules" : {
+    "ico": "../img/usd.png",
+    "factor": 50,
+    "name": "Hércules"
+  },
+  "coreanos" : {
+    "ico": "../img/usd.png",
+    "factor": 50,
+    "name": "Coreanos de la Rambla"
+  },
+  "milton" : {
+    "ico": "../img/usd.png",
+    "factor": 50,
+    "name": "Milton Wynants"
+  }
+}
